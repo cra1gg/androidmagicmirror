@@ -1,0 +1,794 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="d2E-fGB`U^aV6?:QG0qe" x="-2088" y="-1820">
+    <mutation component_type="Form" is_generic="false" instance_name="Settings" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Settings</field>
+    <statement name="DO">
+      <block type="component_set_get" id="`:$UkxH`xS#4|[lGW1k}">
+        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_clockfont"></mutation>
+        <field name="COMPONENT_SELECTOR">txt_clockfont</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_method" id="JyXlwzrOwXS1]jQ|gyOS">
+            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="m,^{HXvc_^{?@_9gbf00">
+                <field name="TEXT">hourminsize</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="math_number" id="3,D/.6)*I}_FbViMQG?U">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="Po%)fH50g]T#uyPEp1Mb">
+            <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_news_size"></mutation>
+            <field name="COMPONENT_SELECTOR">txt_news_size</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="component_method" id="FWu)}{*NM@#1U;^i~e1[">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="ss]B[RH])mNL2$*WG`yF">
+                    <field name="TEXT">newssize</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="math_number" id="dG5J$)~H1h%,f{KD`hTW">
+                    <field name="NUM">26</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="3(hky1}dTbeyAFYa#+hx">
+                <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_tempsize"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_tempsize</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="component_method" id="vKmS6PT=W7XVzdOzmFbk">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="m]X=U2_fJ=h!?gA6D6FV">
+                        <field name="TEXT">tempsize</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="math_number" id="zTvI*_sgd1R(A$=jraD4">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="n33G}.2MTin4UA}$bU|K">
+                    <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_tempdescsize"></mutation>
+                    <field name="COMPONENT_SELECTOR">txt_tempdescsize</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="component_method" id="E:5k_+{rX-4mNNfg(]2`">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="$n*ARb7=53ZLtlRjx[%3">
+                            <field name="TEXT">weatherdescsize</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="math_number" id="A,?GQ|Uzhh76[%!yK3s6">
+                            <field name="NUM">40</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="b5!Y]{V*3cPRbbEI*,Lv">
+                        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_secondsfont"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_secondsfont</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="component_method" id="ag$Hz6oG1EIzM#e3Fg0b">
+                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="$Iz]emVX2PD=1=v-H=R{">
+                                <field name="TEXT">secondsfontsize</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="math_number" id="fgEOHb-)tr(*MA7UFi]t">
+                                <field name="NUM">40</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="w_XXfY]u=v#,`3m-z}b=">
+                            <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_AMPMFontSize"></mutation>
+                            <field name="COMPONENT_SELECTOR">txt_AMPMFontSize</field>
+                            <field name="PROP">Text</field>
+                            <value name="VALUE">
+                              <block type="component_method" id="8q_)~h[Q1iOUE5gR@5j@">
+                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="n7;0UTlucE]uK:vV@9OB">
+                                    <field name="TEXT">ampmfontsize</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="math_number" id="y~Z+27nrotV%3yeBq#:t">
+                                    <field name="NUM">70</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_set_get" id="![]U,k4`h#Dch!iyIE:@">
+                                <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_datesize"></mutation>
+                                <field name="COMPONENT_SELECTOR">txt_datesize</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="component_method" id="Aa^IqSf.gz?b^UehUBwM">
+                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id=":kT}m}~zepurr3~(I;Xh">
+                                        <field name="TEXT">datesize</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="math_number" id="kZwTGB-M6L~-7GL_IzqK">
+                                        <field name="NUM">27</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="`uNlfvr%wnsH(i$E%9Qj">
+                                    <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_CitySize"></mutation>
+                                    <field name="COMPONENT_SELECTOR">txt_CitySize</field>
+                                    <field name="PROP">Text</field>
+                                    <value name="VALUE">
+                                      <block type="component_method" id="}i7O*g1BZqZNDsoM+csN">
+                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id=".5g6Dnik%m:mDoL@mo-b">
+                                            <field name="TEXT">citysize</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="math_number" id="v)XOM]Vy|B%n4r:oop:m">
+                                            <field name="NUM">30</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="=LZ=$-#ILUW=r]()k]?t">
+                                        <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_weathercity"></mutation>
+                                        <field name="COMPONENT_SELECTOR">txt_weathercity</field>
+                                        <field name="PROP">Text</field>
+                                        <value name="VALUE">
+                                          <block type="component_method" id="~ZrG+iWZEipWWTdxSp?%">
+                                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                            <value name="ARG0">
+                                              <block type="text" id="9z@DvMEKlvqv4GIcsS:s">
+                                                <field name="TEXT">city</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="text" id="XwWnC$gMDyx5{tvu*!Rx">
+                                                <field name="TEXT">Toronto</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_set_get" id="ayQpf(Wgi9V~Do}9Hj}9">
+                                            <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_Clock"></mutation>
+                                            <field name="COMPONENT_SELECTOR">chk_Clock</field>
+                                            <field name="PROP">Checked</field>
+                                            <value name="VALUE">
+                                              <block type="component_method" id="oBWh,@c0yZgNJ4R8mm[@">
+                                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                <value name="ARG0">
+                                                  <block type="text" id="z^4dpzyM[te=`S5JMYk%">
+                                                    <field name="TEXT">enableclock</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="logic_boolean" id="xl9cWkt|0gvQ+MoKsIx%">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="component_set_get" id="Z9iveAb^J`BVnARy%~:^">
+                                                <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_seconds"></mutation>
+                                                <field name="COMPONENT_SELECTOR">chk_seconds</field>
+                                                <field name="PROP">Checked</field>
+                                                <value name="VALUE">
+                                                  <block type="component_method" id="rMeJU[Be!+x=i50_V{%q">
+                                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                    <value name="ARG0">
+                                                      <block type="text" id="o]I!cGrjx+T^/3.p1X{C">
+                                                        <field name="TEXT">showseconds</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block type="logic_boolean" id="A170}RS6AXt0|1Rm0*-d">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="component_set_get" id="yw_Yd^X4g]r`n`KTo*^W">
+                                                    <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_AMPM"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">chk_AMPM</field>
+                                                    <field name="PROP">Checked</field>
+                                                    <value name="VALUE">
+                                                      <block type="component_method" id="Q}5bas4tdM]Z)Mo$w8][">
+                                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                        <value name="ARG0">
+                                                          <block type="text" id="NN]S5vPj++_1]s.!QqVF">
+                                                            <field name="TEXT">showampm</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block type="logic_boolean" id="UlO#fs]P4*6@A]KIT$H?">
+                                                            <field name="BOOL">TRUE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="component_set_get" id="G?L7nhu,T4LLsVZ{j)fc">
+                                                        <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_temp"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">chk_temp</field>
+                                                        <field name="PROP">Checked</field>
+                                                        <value name="VALUE">
+                                                          <block type="component_method" id="(|9p@36+rt+|NeimSl_(">
+                                                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                            <value name="ARG0">
+                                                              <block type="text" id="oFxkxk%0$K%_RV#*$gIh">
+                                                                <field name="TEXT">enabletemperature</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block type="logic_boolean" id="bJHBp]`Alxn00Q3@3g1T">
+                                                                <field name="BOOL">TRUE</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="component_set_get" id="B%vk2a$f:?#%!vGXD=UA">
+                                                            <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_weather_desc"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">chk_weather_desc</field>
+                                                            <field name="PROP">Checked</field>
+                                                            <value name="VALUE">
+                                                              <block type="component_method" id="llgrKgT=+Mj::r`@L;z9">
+                                                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                <value name="ARG0">
+                                                                  <block type="text" id="B~|e)#^nuVj!olwX7]b^">
+                                                                    <field name="TEXT">enabledescription</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block type="logic_boolean" id="_}@#2BP0R91H.PSL5g(f">
+                                                                    <field name="BOOL">TRUE</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="component_set_get" id="i15o^Ew9C`gHUyVer{(/">
+                                                                <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_weathericon"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">chk_weathericon</field>
+                                                                <field name="PROP">Checked</field>
+                                                                <value name="VALUE">
+                                                                  <block type="component_method" id="ZKspFFZ/hl?7GRuM~`40">
+                                                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                    <value name="ARG0">
+                                                                      <block type="text" id="HTRmHN|kKYL1_qMk$A-r">
+                                                                        <field name="TEXT">enableicon</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <block type="logic_boolean" id="a}/B7x%:UYA#P`QR3}yg">
+                                                                        <field name="BOOL">TRUE</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="component_set_get" id="b;Jx~MZTiR1Zs?UP,$/O">
+                                                                    <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_enable_news"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">chk_enable_news</field>
+                                                                    <field name="PROP">Checked</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="component_method" id="I.[-UxvArv]zHLukY0]s">
+                                                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                        <value name="ARG0">
+                                                                          <block type="text" id="|z-8,;nYC#-cJ,8082i[">
+                                                                            <field name="TEXT">enablenews</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block type="logic_boolean" id="g=9|S}zEi^jAVG|pr01@">
+                                                                            <field name="BOOL">TRUE</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="component_set_get" id="K${`Pz6G}-)I_BxIdLoe">
+                                                                        <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_date"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">chk_date</field>
+                                                                        <field name="PROP">Checked</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="component_method" id="$Y$P}34mIbX+Ph)S3(r;">
+                                                                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                            <value name="ARG0">
+                                                                              <block type="text" id="-}4ef5*E~FX0-z~`$w5O">
+                                                                                <field name="TEXT">enabledate</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block type="logic_boolean" id="sH8Evn3dclUi_%HSZv{]">
+                                                                                <field name="BOOL">TRUE</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="component_set_get" id="?pCK+wm)[(X-^-c?Jib~">
+                                                                            <mutation component_type="CheckBox" set_or_get="set" property_name="Checked" is_generic="false" instance_name="chk_City"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">chk_City</field>
+                                                                            <field name="PROP">Checked</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="component_method" id=",4oVdIUUV7+z%~CGsxSf">
+                                                                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                                <value name="ARG0">
+                                                                                  <block type="text" id=",:?jM%b()R^JQ:a*8~z.">
+                                                                                    <field name="TEXT">showcity</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block type="logic_boolean" id="?qE?j!(K-XY9LJFTYGPF">
+                                                                                    <field name="BOOL">TRUE</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="][UmD=ZaGf~[OMQdhdwb" x="-2659" y="-1764">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Submit" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Submit</field>
+    <statement name="DO">
+      <block type="component_method" id="QzziyBER{9;l^4uuL(/h">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+        <value name="ARG0">
+          <block type="text" id="!Kt%iKnRY}*#X*r1wO)L">
+            <field name="TEXT">hourminsize</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="component_set_get" id="79OmPPrrLl8TZ0q%U1?l">
+            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_clockfont"></mutation>
+            <field name="COMPONENT_SELECTOR">txt_clockfont</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="1[xrO{,v`)U`.096)v*f">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="u)GrI^9Je$I.`]$pF=hO">
+                <field name="TEXT">tempsize</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="A_k/L;y$c]DX``nrX8dK">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_tempsize"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_tempsize</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="V=UHpk$#B:F/saCg1{MT">
+                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="|wOM=^^aeCA~MFnCRy?T">
+                    <field name="TEXT">newssize</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="component_set_get" id="2eh9HZ.7M1Az(7GlVFDi">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_news_size"></mutation>
+                    <field name="COMPONENT_SELECTOR">txt_news_size</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="=(_hq-qu.2Kk?Kd[+k(K">
+                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="JaVeEDE;6v#^ESYJl$6#">
+                        <field name="TEXT">weatherdescsize</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="component_set_get" id="FoVc%-?J{w$Wbm`n4+Ux">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_tempdescsize"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_tempdescsize</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="!q@dQrGTIlB?GcshD|[T">
+                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                        <value name="ARG0">
+                          <block type="text" id=":R+`sybB`ptbH7;;Os/d">
+                            <field name="TEXT">secondsfontsize</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="component_set_get" id=")f,?j:YGEpw:zS4/e`G}">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_secondsfont"></mutation>
+                            <field name="COMPONENT_SELECTOR">txt_secondsfont</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="!5hCN!P^qROZtxvY68Ov">
+                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="tnS/sUtw4_*}Q(cFo[;q">
+                                <field name="TEXT">ampmfontsize</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="component_set_get" id="$|;AdrYPosIfN~B=?aBC">
+                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_AMPMFontSize"></mutation>
+                                <field name="COMPONENT_SELECTOR">txt_AMPMFontSize</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_method" id="2+KZhl7vj?/|o_ifAAn(">
+                                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="R[-EE9u9nh~sTxLgxN(5">
+                                    <field name="TEXT">datesize</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="component_set_get" id="/r#sP7Cs(U;%wT(?{Qse">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_datesize"></mutation>
+                                    <field name="COMPONENT_SELECTOR">txt_datesize</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_method" id="`X@6mS,q8;^;4gdoM=(w">
+                                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="u9cSklkPoHEAb]2BBXxQ">
+                                        <field name="TEXT">city</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="component_set_get" id="R430]^j*A_0`~[y@U%Jv">
+                                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_weathercity"></mutation>
+                                        <field name="COMPONENT_SELECTOR">txt_weathercity</field>
+                                        <field name="PROP">Text</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_method" id="R4t^)F}.wMDuSuk0Z{}*">
+                                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id="l8H5AH=F_A()ha*$my~r">
+                                            <field name="TEXT">weatherkey</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="component_set_get" id="ONVS5`6~ts-Hh8@NrE/Q">
+                                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_WeatherKey"></mutation>
+                                            <field name="COMPONENT_SELECTOR">txt_WeatherKey</field>
+                                            <field name="PROP">Text</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_method" id="4[#}.lpVENrk2oQe=auY">
+                                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                            <value name="ARG0">
+                                              <block type="text" id="fI(1poM9SlJzXd^K%YC*">
+                                                <field name="TEXT">enableclock</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="component_set_get" id="{v{5oJk^+|{RC[/o=8OI">
+                                                <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_Clock"></mutation>
+                                                <field name="COMPONENT_SELECTOR">chk_Clock</field>
+                                                <field name="PROP">Checked</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="component_method" id="{ghhPW/{.OKk.2JMWbAu">
+                                                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                <value name="ARG0">
+                                                  <block type="text" id="n,9Yfs~%@HX*C^(`@T~?">
+                                                    <field name="TEXT">showseconds</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="component_set_get" id="0QN([r58i`Ul-7!dUt6D">
+                                                    <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_seconds"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">chk_seconds</field>
+                                                    <field name="PROP">Checked</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="component_method" id="w|$2shK|iPRKwDp#vC1L">
+                                                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                    <value name="ARG0">
+                                                      <block type="text" id="en){]AN2(vSi7J$;yFx^">
+                                                        <field name="TEXT">showampm</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block type="component_set_get" id="W5MnLUMqTS3SbEnILKh`">
+                                                        <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_AMPM"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">chk_AMPM</field>
+                                                        <field name="PROP">Checked</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="component_method" id="LxwE/x;c4Bc6Il,JW%ml">
+                                                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                        <value name="ARG0">
+                                                          <block type="text" id="vnIDdXPz@?wFMW3T!Noh">
+                                                            <field name="TEXT">24hourtime</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block type="component_set_get" id=":LfGgA0==u-bI+w?k}YV">
+                                                            <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_24Hr"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">chk_24Hr</field>
+                                                            <field name="PROP">Checked</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="component_method" id="Y0WOC`-V:tSVj31Dzq}E">
+                                                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                            <value name="ARG0">
+                                                              <block type="text" id="/)%Zvc+vYv+w1^|O?ZS@">
+                                                                <field name="TEXT">enabletemperature</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block type="component_set_get" id=".Xzh5nx$RAv_.#*E@$%Q">
+                                                                <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_temp"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">chk_temp</field>
+                                                                <field name="PROP">Checked</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="component_method" id=".)H~@!MXbSXrS+/5A$n#">
+                                                                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                <value name="ARG0">
+                                                                  <block type="text" id="`IZI^z{tO)6GHCn7`|%b">
+                                                                    <field name="TEXT">enabledescription</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block type="component_set_get" id="7}fqP/1WmeA*WR=)NMje">
+                                                                    <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_weather_desc"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">chk_weather_desc</field>
+                                                                    <field name="PROP">Checked</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="component_method" id="z:o1GNTtaCw]Ic23Mi?*">
+                                                                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                    <value name="ARG0">
+                                                                      <block type="text" id="JHQ.$Fw]wc!A9y{ET2}u">
+                                                                        <field name="TEXT">enableicon</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <block type="component_set_get" id="4:_W6XiEu^GOqN2[o0b7">
+                                                                        <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_weathericon"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">chk_weathericon</field>
+                                                                        <field name="PROP">Checked</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="component_method" id=":TxplkfgKPf}D|j?.nmY">
+                                                                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                        <value name="ARG0">
+                                                                          <block type="text" id="I%+n??IRAJ|~^#XLhyX%">
+                                                                            <field name="TEXT">enablenews</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block type="component_set_get" id="O|eir.W?~:EH0Ym;P{8M">
+                                                                            <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_enable_news"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">chk_enable_news</field>
+                                                                            <field name="PROP">Checked</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="component_method" id=";leznuXQZ#L5@^`bl(OA">
+                                                                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                            <value name="ARG0">
+                                                                              <block type="text" id="@G0JeQ:~:%xRj*+`Qz{s">
+                                                                                <field name="TEXT">enabledate</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block type="component_set_get" id="ZGjD(v!/Uk~}Bw`oT6G*">
+                                                                                <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_date"></mutation>
+                                                                                <field name="COMPONENT_SELECTOR">chk_date</field>
+                                                                                <field name="PROP">Checked</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="component_method" id="HWlLLe-hD:f0(ak4+tQU">
+                                                                                <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                                <value name="ARG0">
+                                                                                  <block type="text" id="LQ)DoAa7Pk/JwreD[T#p">
+                                                                                    <field name="TEXT">showcity</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block type="component_set_get" id="dF|`2ztR18}Kd[5k2B*;">
+                                                                                    <mutation component_type="CheckBox" set_or_get="get" property_name="Checked" is_generic="false" instance_name="chk_City"></mutation>
+                                                                                    <field name="COMPONENT_SELECTOR">chk_City</field>
+                                                                                    <field name="PROP">Checked</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="component_method" id="Ao2m({AFMO3x):yowN;m">
+                                                                                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                                                                                    <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                                                                                    <value name="ARG0">
+                                                                                      <block type="text" id="X5fIm`ECn,nf(Hrj/Xd)">
+                                                                                        <field name="TEXT">citysize</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG1">
+                                                                                      <block type="component_set_get" id="+3-#VNrE~%qQ%II]nZTH">
+                                                                                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_CitySize"></mutation>
+                                                                                        <field name="COMPONENT_SELECTOR">txt_CitySize</field>
+                                                                                        <field name="PROP">Text</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="controls_openAnotherScreen" id="9t+/y2)^pkbc.jmC+z;Z">
+                                                                                        <value name="SCREEN">
+                                                                                          <block type="text" id="`qCIq}B0?BzdXq)k;R^v">
+                                                                                            <field name="TEXT">Screen1</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="31"></yacodeblocks>
+</xml>

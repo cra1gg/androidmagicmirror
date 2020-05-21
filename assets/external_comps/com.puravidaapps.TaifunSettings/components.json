@@ -1,0 +1,155 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "https://puravidaapps.com/images/taifun16.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "RingtoneGet",
+   "description": "Get current ringtone. Type can be RINGTONE, NOTIFICATION or ALARM.",
+   "params": [{
+    "name": "type",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "RingtonePlay",
+   "description": "Play ringtone. Type can be RINGTONE, NOTIFICATION or ALARM.",
+   "params": [{
+    "name": "type",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "RingtoneSet",
+   "description": "Set sound file as ringtone, notification and/or alarm sound. Title is a custom name for the sound. Type can be RINGTONE, NOTIFICATION or ALARM. The sound file must be stored on sdcard and in mp3 or 3gp format. For files from the assets, copy them first to the sdcard using the file extension. Prefix the fileName with / (i.e. relative path) to look for the file on the SD card. For instance /myFile.txt will look for the file /mnt/sdcard/myFile.txt. If fileName starts with file:/// you can specify a complete path to the file.",
+   "params": [
+    {
+     "name": "title",
+     "type": "text"
+    },
+    {
+     "name": "type",
+     "type": "text"
+    },
+    {
+     "name": "soundFileName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "RingtoneStop",
+   "description": "Stop currently playing ringtone.",
+   "params": []
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Brightness",
+   "description": "brightness (a value between 0 and 255)",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "BrightnessMode",
+   "description": "brightness mode (MANUAL or AUTO)",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "FontScale",
+   "description": "font scale",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ShowUI",
+   "description": "whether User Interface shoud be showed while setting the volume.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "VolumeAlarm",
+   "description": "notification volume in percent.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "VolumeMusic",
+   "description": "media volume in percent.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "VolumeRing",
+   "description": "ringtone volume in percent.",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "",
+ "type": "com.puravidaapps.TaifunSettings",
+ "androidMinSdk": 7,
+ "version": "6",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "TaifunSettings",
+ "helpString": "Settings Extension. Version 6 as of 2018-10-19 for App Inventor version nb170 and Companion version 2.47.",
+ "properties": [
+  {
+   "defaultValue": "82",
+   "name": "Brightness",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "AUTO",
+   "name": "BrightnessMode",
+   "editorArgs": [],
+   "editorType": "string"
+  },
+  {
+   "defaultValue": "1",
+   "name": "FontScale",
+   "editorArgs": [],
+   "editorType": "float"
+  },
+  {
+   "defaultValue": "True",
+   "name": "ShowUI",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "82",
+   "name": "VolumeAlarm",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "82",
+   "name": "VolumeMusic",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "82",
+   "name": "VolumeRing",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  }
+ ],
+ "events": []
+}]
